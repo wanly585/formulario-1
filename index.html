@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <style>
+
+        /* Estilo general del fondo */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f2f5;
+  padding: 40px;
+}
+
+/* Contenedor del formulario */
+.formulario {
+  max-width: 400px;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Título del formulario */
+.formulario h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333333;
+  font-size: 22px;
+}
+
+/* Etiquetas */
+.formulario label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #444;
+}
+
+/* Campos de entrada */
+.formulario input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 15px;
+  transition: border-color 0.3s;
+}
+
+.formulario input:focus {
+  border-color: #2196F3;
+  outline: none;
+}
+
+/* Botón de envío */
+.formulario button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 25px;
+  background-color: #2196F3;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.formulario button:hover {
+  background-color: #1976D2;
+}
+
+
+    </style>
+   
+    
+    <form class="formulario"
+    action="https://formspree.io/f/mrbqyagq"
+    method="post">
+
+
+        <h1>registrate para resivir notificaciones</h1>
+      
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+      
+        <label for="correo">Gmail</label>
+        <input type="email" id="correo" name="correo" placeholder="tucorreo@gmail.com" required>
+      
+        <label for="contrasena">Contraseña</label>
+        <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required>
+      
+        <label for="confirmar">Confirmar Contraseña</label>
+        <input type="password" id="confirmar" name="confirmar" placeholder="Repite la contraseña" required>
+      
+        <button type="submit">enviar</button>
+        </form>
+      
+    
+
+
+        
+
+    
+</body>
+</html>
